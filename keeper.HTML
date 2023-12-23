@@ -1,0 +1,20 @@
+<div id="createMealArea">
+    <h2>Create a Meal</h2>
+    <label for="mealName">Meal Name</label>
+    <input type="text" id="mealName">
+    <label for="foodSearch"> Search for Food</label>
+    <input type="text" id="foodSearch" placeholder="Enter food name">
+    <button onclick="searchFood()">Search</button>
+    <label for="foodItems">Select Ingredients</label>
+    <select id="foodItems" multiple></select>
+    <label for="quantity"> Grams</label>
+    <input type="number" id="quantity" min="1" value="1">
+    <button onclick="addFoodItem()">Add Ingredient</button>
+
+    <div id="selectedFoodItems">
+        <h3 id="h33">Selected Ingredients</h3>
+        <ul id="selectedFoodList"></ul>
+    </div>
+
+    <button style="background-color: #FFAB40;" onclick="createMeal()">Create Meal</button>
+</div>

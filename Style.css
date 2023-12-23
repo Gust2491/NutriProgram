@@ -1,0 +1,493 @@
+html,
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+#menu {
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    font-family: Nunito;
+    font-size: 26px;
+    background-color: #99d9de;
+    width: 100%;
+    padding: 40px;
+    box-shadow: 0 0 10px 5px rgb(219, 209, 209);
+}
+
+#a1 {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#a1:hover {
+    color: #616161;
+}
+
+#a1::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #616161;
+    transition: .3s;
+}
+
+#menu a:hover::before {
+    width: 100%;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(Nunito/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+div {
+    font-family: Nunito;
+}
+
+
+/* DashBoard --------------------------------------------------------------------- */
+#Dashboard {
+    font-family: Nunito;
+    display: flex;
+}
+
+#Dashboard div {
+    display: grid;
+    justify-content: center;
+    width: 250px;
+    height: 200px;
+    font-family: Nunito;
+    margin: 50px;
+    padding: 60px;
+    border: solid;
+    border-color: #99d9de;
+    border-width: 2px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgb(219, 209, 209);
+}
+
+#MealsT h2,
+#EngT h2,
+#WatT h2,
+#ProT h2 {
+    background-color: #569BD5;
+    color: white;
+    width: 1fr;
+    height: 30px;
+    justify-self: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+#NumberMeals,
+#EngT p,
+#WatT p,
+#ProT p {
+    color: #91C789;
+    font-size: 30px;
+}
+
+
+#Dashboard div h2:nth-child(1) {
+
+    justify-self: center;
+}
+
+#Dashboard div p:nth-child(2) {
+    grid-column: span 1;
+    justify-self: center;
+    font-weight: bolder;
+}
+
+#Dash {
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+/* Food Inspector ---------------------------------------------------*/
+
+
+#ingredient-container {
+    display: grid;
+    width: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 30px;
+}
+
+#ingredient-container p {
+background-color: #91C789;
+padding: 3px;
+
+}
+#ingredient-container div {
+    font-family: Nunito;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f2fff5;
+    border: solid;
+    border-width: 2px;
+    border-color: #bdbdbd;
+   
+
+}
+
+#ingredient-container table {
+cursor: pointer;
+}
+#ingredient-container div:nth-child(1) {
+    grid-column: span 1;
+    /* This will make the first div span two columns */
+}
+
+#ingredient-container div:nth-child(2) {
+    grid-column: span 1;
+    /* This will make the second div span two columns */
+}
+
+#ingredient-container div:nth-child(3) {
+    order: -1;
+    grid-column: span 3;
+    /* This will make the third div span three columns, taking the whole row */
+}
+
+/* Meal Creator --------------------------------------------------------------------------*/
+
+#MealCreatorArea {
+    border-radius: 20px;
+    margin: 40px;
+    margin-top: 10px;
+    display: grid;
+    justify-content: center;
+}
+
+#createMealArea {
+    margin-top: 30px;
+    width: 550px;
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+    font-family: Nunito;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #def6d8;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgb(219, 209, 209);
+}
+
+#createMealArea button {
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #91C789;
+    border: 0px;
+    padding: 6px;
+    justify-self: center;
+    width: 400px;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: Nunito;
+}
+
+#createMealArea label {
+    font-family: Nunito;
+    font-weight: bold;
+    justify-self: center;
+    margin: 5px;
+}
+
+#createMealArea input {
+    text-align: center;
+    justify-self: center;
+    width: 400px;
+}
+
+#createMealArea select {
+    width: 400px;
+    justify-self: center;
+    text-align: center;
+}
+
+#createMealArea h2 {
+    justify-self: center
+}
+
+#createMealBtn {
+    justify-self: center;
+    font-family: Nunito;
+    color: black;
+    font-weight: bolder;
+    font-size: 40px;
+    width: 300px;
+    border-radius: 200px;
+    border-width: 0;
+    box-shadow: 0 0 10px 5px rgb(219, 209, 209);
+    background-color: #91C789;
+    cursor: pointer;
+}
+
+#createMealBtn:hover {
+    color: #616161;
+}
+
+#selectedFoodItems {
+    justify-self: center;
+}
+
+#mealsContainer {
+    font-family: Nunito;
+    display: grid;
+    border: solid;
+    border-radius: 20px;
+    border-color: #99d9de;
+}
+
+#MealTags {
+    display: flex;
+    margin-left: 30px;
+
+}
+
+#indg {
+    text-align: center;
+
+}
+
+#MealTags p {
+    width: 250px;
+
+}
+
+.meal {
+    border-radius: 20px;
+    background-color: #def6d8;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+
+
+}
+
+.meal p {
+    width: 250px;
+    height: 1fr;
+
+
+}
+
+.meal p:nth-child(3) {
+    text-align: center;
+
+}
+
+
+
+.deleteButton,
+.removeButton {
+    color: red;
+    cursor: pointer;
+    margin-right: 10px;
+    
+}
+
+.deleteButton:hover {
+    color: rgb(139, 0, 0);
+}
+
+#selectedFoodItems {
+    margin-top: 10px;
+}
+
+/* MealTracker -----------------------------------------------------------------*/
+
+#MealtrackerArea {
+    font-family: Nunito;
+    margin: 30;
+    border: solid;
+    border-radius: 20px;
+    border-color: #99d9de;
+
+}
+
+#MealtrackerArea h1 {
+    margin-left: 30px;
+}
+
+#MealsArea {
+    font-family: Nunito;
+    display: grid;
+
+}
+
+#nameMeal {
+    width: 95px;
+}
+.trackMeal {
+    background-color: #def6d8;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.trackMeal p {
+    font-weight: bold;
+    justify-content: center;
+    align-self: center;
+}
+
+.trackMeal div {
+    justify-content: center;
+    align-self: center;
+}
+
+#divHead {
+    display: flex;
+    font-size: 18px;
+    margin-left: 180px;
+    margin-bottom: -30px;
+    gap: 80px;
+
+}
+
+#divHead p {
+    width: 100px;
+}
+
+.updateButton {
+    border-radius: 20px;
+    background-color: #91C789;
+    padding: 8px;
+    color: black;
+}
+
+.updateButton:hover {
+    color: #616161;
+    cursor: pointer;
+}
+
+#Updater {
+    display: grid;
+    align-items: flex-start;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+#Updater label {
+    font-family: nunito;
+    font-weight: bold;
+}
+
+#upBtn {
+    justify-self: center;
+    background-color: #f29a8a;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 40%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border-width: 0px;
+    box-shadow: 0 0 5px 5px rgb(219, 209, 209);
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+
+}
+
+
+#WE {
+    width: 150px;
+}
+
+#NutriGrid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    /* Fix: Remove the comma between values */
+}
+
+#NutriGrid p {
+    padding: 6px;
+    /* Add padding for better spacing */
+    margin: 4px;
+    border-width: 1px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#p1 {
+    background-color: #f29a8a;
+}
+
+#p2 {
+    background-color: #FFAB40;
+}
+
+#p3 {
+    background-color: #91C789;
+}
+
+#p4 {
+    background-color: #569BD5;
+}
+
+
+/*NutriReport ---------------------------------------------------------------------*/
+
+#NutriRep {
+    margin: 40px;
+    padding: 20px;
+}
+
+#NutriRep h1 {
+    margin-left: 30px;
+}
+
+#RepTags {
+    display: flex;
+    gap: 130px;
+    margin-bottom: -30px;
+    margin-left: 165px;
+
+}
+
+#TW {
+    text-align: center;
+    width: 55px;
+}
+
+#TP {
+    text-align: center;
+    width: 55px;
+}
+
+#TF {
+    text-align: center;
+    width: 60px;
+}
+
+#TFF {
+    text-align: center;
+    width: 80px;
+}
+
+.reports {
+    margin: 20px;
+    background-color: #91C789;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}

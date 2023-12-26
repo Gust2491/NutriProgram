@@ -312,7 +312,8 @@ cursor: pointer;
 
 #MealtrackerArea {
     font-family: Nunito;
-    margin: 30;
+    margin: 30px;
+    padding-bottom: 40px;
     border: solid;
     border-radius: 20px;
     border-color: #99d9de;
@@ -354,10 +355,11 @@ cursor: pointer;
 
 #divHead {
     display: flex;
+    justify-content: space-evenly;
     font-size: 18px;
-    margin-left: 180px;
+    margin-left: 4.4%;
+    margin-right: 27.5%;
     margin-bottom: -30px;
-    gap: 80px;
 
 }
 
@@ -448,7 +450,7 @@ cursor: pointer;
 /*NutriReport ---------------------------------------------------------------------*/
 
 #NutriRep {
-    margin: 40px;
+    margin: 3%;
     padding: 20px;
 }
 
@@ -458,34 +460,15 @@ cursor: pointer;
 
 #RepTags {
     display: flex;
-    gap: 130px;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-bottom: -30px;
-    margin-left: 165px;
+    justify-content: space-evenly;
 
-}
-
-#TW {
-    text-align: center;
-    width: 55px;
-}
-
-#TP {
-    text-align: center;
-    width: 55px;
-}
-
-#TF {
-    text-align: center;
-    width: 60px;
-}
-
-#TFF {
-    text-align: center;
-    width: 80px;
 }
 
 .reports {
-    margin: 20px;
+    margin: 2%;
     background-color: #91C789;
     border-radius: 20px;
     display: flex;

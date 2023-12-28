@@ -32,7 +32,7 @@ function updateMeal(index) {
     mealDiv.appendChild(updateForm);
 }
 
-//Funktion til en knap som sikre og opdatere når de nye værdier er indtastet
+//Funktion til Update knappen som opdatere de nye værdier der er indtastet og ændre mealet i localStorage.
 function confirmUpdate(index) {
     const meals = JSON.parse(localStorage.getItem("meals")) || [];
     const mealToUpdate = meals[index];
@@ -69,7 +69,7 @@ function displayTrackMeals() {
                 totalNutriArray[l] += meals[i].foodItems[j].Nutri[l] * meals[i].foodItems[j].quantity;
             }
         }
-
+        //Tilføjer her HTML elementer til div'en og de enkelte meals variabler indsættes med template literals
         mealDiv.innerHTML = `
             <p id="nameMeal">${meals[i].name}</p>
             <div>

@@ -12,10 +12,10 @@ function fetchFoodItemsByName(searchInput) {
     const url = `https://nutrimonapi.azurewebsites.net/api/FoodItems/BySearch/${searchInput}`;
 
     return fetch(url, {
-            headers: {
-                "x-api-key": "170482"
-            }
-        })
+        headers: {
+            "x-api-key": "170482"
+        }
+    })
         .then(response => response.json())
         .catch(error => console.error("Error fetching food items:", error));
 }
@@ -223,7 +223,7 @@ async function displayMeals() {
             const foodItemsArray = meal.foodItems || [];
             const foodNamesArray = foodItemsArray.map(foodItem => foodItem.foodName);
             let ingredients = 0;
-            //tæller antal af ingredienser
+            //Tæller antal af ingredienser
             for (let i = 0; i < foodNamesArray.length; i++) {
                 ingredients++;
 

@@ -52,7 +52,6 @@ div {
     font-family: Nunito;
 }
 
-
 /* DashBoard --------------------------------------------------------------------- */
 #Dashboard {
     font-family: Nunito;
@@ -97,7 +96,6 @@ div {
     font-size: 30px;
 }
 
-
 #Dashboard div h2:nth-child(1) {
 
     justify-self: center;
@@ -128,7 +126,6 @@ div {
 #ingredient-container p {
     background-color: #91C789;
     padding: 3px;
-
 }
 
 #ingredient-container div {
@@ -139,8 +136,6 @@ div {
     border: solid;
     border-width: 2px;
     border-color: #bdbdbd;
-
-
 }
 
 #ingredient-container table {
@@ -452,10 +447,6 @@ div {
     margin-bottom: -30px;
     justify-content: space-evenly;
 }
-
-
-
-
 
 .reports {
     margin: 2%;

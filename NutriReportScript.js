@@ -12,7 +12,7 @@ function displayReport() {
         const totalNutriArray = totalNutrientsByDate[currentDate] || Array(5).fill(0);
         for (let j = 0; j < meals[i].foodItems.length; j++) {
             const quantity = parseFloat(meals[i].foodItems[j].quantity);
-            
+
             for (let l = 0; l < meals[i].foodItems[j].Nutri.length; l++) {
                 totalNutriArray[l] += meals[i].foodItems[j].Nutri[l] * quantity;
             }

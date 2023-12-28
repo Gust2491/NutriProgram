@@ -126,10 +126,11 @@ div {
 }
 
 #ingredient-container p {
-background-color: #91C789;
-padding: 3px;
+    background-color: #91C789;
+    padding: 3px;
 
 }
+
 #ingredient-container div {
     font-family: Nunito;
     padding: 20px;
@@ -138,27 +139,25 @@ padding: 3px;
     border: solid;
     border-width: 2px;
     border-color: #bdbdbd;
-   
+
 
 }
 
 #ingredient-container table {
-cursor: pointer;
+    cursor: pointer;
 }
+
 #ingredient-container div:nth-child(1) {
     grid-column: span 1;
-    /* This will make the first div span two columns */
 }
 
 #ingredient-container div:nth-child(2) {
     grid-column: span 1;
-    /* This will make the second div span two columns */
 }
 
 #ingredient-container div:nth-child(3) {
     order: -1;
     grid-column: span 3;
-    /* This will make the third div span three columns, taking the whole row */
 }
 
 /* Meal Creator --------------------------------------------------------------------------*/
@@ -274,15 +273,11 @@ cursor: pointer;
     justify-content: space-between;
     padding: 10px;
     margin: 10px;
-
-
 }
 
 .meal p {
     width: 250px;
     height: 1fr;
-
-
 }
 
 .meal p:nth-child(3) {
@@ -290,14 +285,12 @@ cursor: pointer;
 
 }
 
-
-
 .deleteButton,
 .removeButton {
     color: red;
     cursor: pointer;
     margin-right: 10px;
-    
+
 }
 
 .deleteButton:hover {
@@ -317,7 +310,6 @@ cursor: pointer;
     border: solid;
     border-radius: 20px;
     border-color: #99d9de;
-
 }
 
 #MealtrackerArea h1 {
@@ -327,19 +319,18 @@ cursor: pointer;
 #MealsArea {
     font-family: Nunito;
     display: grid;
-
 }
 
 #nameMeal {
     width: 95px;
 }
+
 .trackMeal {
     background-color: #def6d8;
     border-radius: 20px;
     margin: 20px;
     display: flex;
     justify-content: space-evenly;
-
 }
 
 .trackMeal p {
@@ -360,7 +351,6 @@ cursor: pointer;
     margin-left: 4.4%;
     margin-right: 27.5%;
     margin-bottom: -30px;
-
 }
 
 #divHead p {
@@ -406,7 +396,6 @@ cursor: pointer;
     font-weight: bold;
     font-size: 17px;
     cursor: pointer;
-
 }
 
 
@@ -418,12 +407,10 @@ cursor: pointer;
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr;
-    /* Fix: Remove the comma between values */
 }
 
 #NutriGrid p {
     padding: 6px;
-    /* Add padding for better spacing */
     margin: 4px;
     border-width: 1px;
     border-radius: 20px;
@@ -461,11 +448,14 @@ cursor: pointer;
 #RepTags {
     display: flex;
     margin-left: 2%;
-    margin-right: 2%;
+    margin-right: 5%;
     margin-bottom: -30px;
     justify-content: space-evenly;
-
 }
+
+
+
+
 
 .reports {
     margin: 2%;
